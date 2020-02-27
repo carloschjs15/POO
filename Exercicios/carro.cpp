@@ -1,63 +1,80 @@
 #include <iostream>
 using namespace std;
 
-struct Carro{
-    int nPessoas = 0;
-    int maxPessoas = 2;
-    float gasolina = 0;
-    float maxGasolina = 100;
-    int km = 0;
-
-    bool embarcar(){
-        if (this->nPessoas < this->maxPessoas){
-            this->nPessoas += 1;
-            cout << "embarcou\n";
-            return true;
+class Carro{
+    private:
+        int nPessoas = 0;
+        int maxPessoas = 2;
+        float gasolina = 0;
+        float maxGasolina = 100;
+        int km = 0;
+    
+    public:
+        Carro(){
+            cout << "Digite o número máximo de pessoas: ";
+            cin >> this->maxPessoas;
+            cout << "Digite a quantidade máxima de litros que o tanque do carro comporta: ";
+            cin >> this->maxGasolina;
         }
-        cout << "ta lotado\n";
-        return false;
-    }
 
-    bool desembarcar(){
-        if (this->nPessoas > 0){
-            this->nPessoas--;
-            cout << "Desembarcou\n";
-            return true;
+        void mostra_pessoas(){
+            cout << "O carro possui " << this->nPessoas << " pessoas\n";
         }
-        cout << "Não há ninguém!\n";
-        return false;
-    }
 
-    void dirigir(int km){
-        if(this->nPessoas > 0){
-            if(km <= this->gasolina){
-                this->gasolina -= km;
-                this->km += km;
-                cout << "Você chegou ao seu destino!\n";
-            }else{
-                cout << "Não há gasolina para dirigir a distância!\n";
+        bool embarcar(){
+            if (this->nPessoas < this->maxPessoas){
+                this->nPessoas += 1;
+                cout << "embarcou\n";
+                return true;
             }
-        }else{
-            cout << "Não há ninguém no carro!\n";
+            cout << "ta lotado\n";
+            return false;
         }
-    }
 
-    int mostra_distancia(){
-        return this->km;
-    }
-
-    void abastecer(float gasolina){
-        if(gasolina > this->maxGasolina || (gasolina+this->gasolina) > this->maxGasolina){
-            this->gasolina = this->maxGasolina;
-        }else{
-            this->gasolina += gasolina;
+        bool desembarcar(){
+            if (this->nPessoas > 0){
+                this->nPessoas--;
+                cout << "Desembarcou\n";
+                return true;
+            }
+            cout << "Não há ninguém!\n";
+            return false;
         }
-        cout << "Abastecido!\n";
-    }
 
-    float mostrar_gasolina(){
-        return this->gasolina;
-    }
+        void dirigir(int km){
+            if(this->nPessoas > 0){
+                if(km <= this->gasolina){
+                    this->gasolina -= km;
+                    this->km += km;
+                    cout << "Você chegou ao seu destino!\n";
+                }else{
+                    cout << "Não há gasolina para dirigir a distância!\n";
+                }
+            }else{
+                cout << "Não há ninguém no carro!\n";
+            }
+        }
+
+        int mostra_distancia(){
+            return this->km;
+        }
+
+        void abastecer(float gasolina){
+            if(gasolina > this->maxGasolina || (gasolina+this->gasolina) > this->maxGasolina){
+                this->gasolina = this->maxGasolina;
+            }else{
+                this->gasolina += gasolina;
+            }
+            cout << "Abastecido!\n";
+        }
+
+        float mostrar_gasolina(){
+            return this->gasolina;
+        }
+
+        ~Carro(){
+            cout << "Carro destruído! :(" << endl;
+        }
 
 };
 
@@ -75,7 +92,7 @@ int main() {
                 carro->desembarcar();
                 break;
             case 3:
-                cout << "O carro possui " << carro->nPessoas << " pessoas\n";
+                carro->mostra_pessoas();
                 break; 
             case 4:
                 int km;
@@ -97,6 +114,7 @@ int main() {
                 break;            
             case 8:
                 cout << "::> Fim da execução" << endl;
+                delete carro;
                 break;
             default:
                 cout << "Por favor informe uma opção correta!\n";

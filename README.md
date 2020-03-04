@@ -3,8 +3,7 @@
 # Carlos Henrique Jacinto da Silva - 412914 EC
 
 ## Exercicios
-- Atividade feita em 1º aula
-	- Foi criado um carro com métodos e atributos, juntamente com um menu.
+- Foi criado um carro com métodos e atributos, juntamente com um menu.
 - Individual
 	- Fiz solo, usei lógica e base de FUP e ED, para fazer esta atividade, foi bastante tranquilo.
 - Aprendizagem

@@ -2,11 +2,12 @@
 #define LISTASEQUENCIAL_H
 class ListaSequencial{
 	private:
-		int *v;
+		int *v = nullptr;
 		int tam;
 		int capacidade;
 	public:
 		ListaSequencial(int);
+		~ListaSequencial();
 		void inserir(int);
 		void remover(int);
 		int getElemento(int);

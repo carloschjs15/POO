@@ -3,8 +3,10 @@
 using namespace std;
 
 int main(){
-	ListaSequencial lista(10);
-	int op,n;
+	int op,n, tamanho;
+	cout << "Digite o tamanho máximo da lista: ";
+	cin >> tamanho;
+	ListaSequencial lista(tamanho);
 	do{
 		cout << "\nMENU\n1 - Inserir valor\n2 - Remover valor\n3 - Mostrar a lista\n4 - Limpar a lista\n5 - Sair\nDigite sua opcao: ";
 		cin >> op;
@@ -26,8 +28,6 @@ int main(){
 		case 4:
 			lista.limpar();
 			break;
-		default:
-			cout << "FIM DA EXECUÇÃO" << endl;
 	}
 	}while(op != 5);
 	return 0;

@@ -8,6 +8,10 @@ ListaSequencial::ListaSequencial(int n){
 	tam = 0;
 	capacidade = n;
 }
+ListaSequencial::~ListaSequencial(){
+	delete v;
+	cout << "Fim da execução\n";
+}
 bool ListaSequencial::cheia(){
 	return (tam==capacidade);
 }

@@ -26,4 +26,7 @@
 	- Demorei em torno de 1 hora, pois ainda dei umas pesquisadas em como construir o código em arquivos diferentes
 
 ## S03E01
+- Era pra ser feito em java, mas fiz em C++, para praticar.
 
+## S03E02
+- Foi resolvido o exercício passado, que seria melhorar a motinha do arquivo S03E01, colocando novos atributos e métodos

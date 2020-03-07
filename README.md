@@ -30,3 +30,13 @@
 
 ## S03E02
 - Foi resolvido o exercício passado, que seria melhorar a motinha do arquivo S03E01, colocando novos atributos e métodos
+
+## Lapiseira
+- Foi criado uma lapiseira com métodos e atributos, essa lapiseira é a classe "mãe" e existe a classe grafite que vai combinar com a classe Lapiseira
+- Individual
+- Aprendizagem
+	- Aprendi a criar duas classes e interligá-las
+- Dificuldades
+	- Não tive dificuldade
+- Tempo
+	- Demorei em torno de 20 minutos

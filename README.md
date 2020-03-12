@@ -6,7 +6,7 @@
 - Esses exercícios são os feitos em salas 
 - Atividades
 	- Criar um carro, usando o conceito de classes, com métodos e atributos
-	- [Resolução de atividade] (https://github.com/qxcodepoo/arcade/blob/master/base/005/Readme.md#03_rookie-mestre-dos-vetores)
+	- [Resolução de atividade](https://github.com/qxcodepoo/arcade/blob/master/base/005/Readme.md#03_rookie-mestre-dos-vetores)
 - Cada um deles fiz individual
 - Aprendizagem
 	- O que aprendi a mais foi como utilizar class em C++ e usar construtores e destrutores.

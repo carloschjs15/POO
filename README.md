@@ -5,14 +5,14 @@
 ## Projeto 01 (Exercicios) - S01E01
 - Esses exercícios são os feitos em salas 
 - Foi criado um carro com métodos e atributos, juntamente com um menu.
-- Individual
-	- Fiz solo, usei lógica e base de FUP e ED, para fazer esta atividade, foi bastante tranquilo.
+- Cada um deles fiz individual
 - Aprendizagem
 	- O que aprendi a mais foi como utilizar class em C++ e usar construtores e destrutores.
+	- Aprendi a utilizar vector e suas funções já prontas
 - Dificuldades
 	- Ainda não possuo dificuldade, estou tirando dúvidas em aula e na internet.
 - Tempo
-	- Demorei em torno de 30 minutos no máximo
+	- Todas as atividades em média demorei em torno de 30 minutos para terminar
 
 ## S02E01
 - Foi criado uma lista sequencial com métodos e atributos, fiz em arquivos diferentes, declarando os métodos e os atributos em um arquivo .h e fiz os métodos da class no arquivo class.cpp, também foi feito um menu criado em main.cpp

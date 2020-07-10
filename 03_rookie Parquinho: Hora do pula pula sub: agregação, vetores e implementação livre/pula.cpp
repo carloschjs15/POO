@@ -50,12 +50,12 @@ class Trampolim{
         string toString(){
             string linha = "=> ";
             vector<Kid>::reverse_iterator rit = kidsWaiting.rbegin();
-            for(; rit != kidsWaiting.rend(); rit++){
+            for (; rit!= kidsWaiting.rend(); ++rit){
                 linha += rit->toString() + " ";
             }
             linha += "=> [ ";
             vector<Kid>::reverse_iterator rt = kidsplaying.rbegin();
-            for(; rt != kidsplaying.rend(); rit++){
+            for (; rt!= kidsplaying.rend(); ++rt){
                 linha += rt->toString() + " ";
             }
             linha += "]";
@@ -136,7 +136,7 @@ class Trampolim{
         void fecha(){
             this->kidsplaying.erase(this->kidsplaying.begin(), this->kidsplaying.end());
             this->kidsWaiting.erase(this->kidsWaiting.begin(), this->kidsWaiting.end());
-            cout << "Caixa de hoje:" << caixa;
+            cout << "Caixa de hoje:" << caixa << endl;
         }
 };
 
